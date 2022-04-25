@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    <title>AmarettoCake48</title>
+</head>
+<body>
+
+
+    <!-- Sprite -->
+
+    <svg style="display: none;">
+        <symbol id="download" viewBox="0 0 21 21">
+            <g>
+                <path d="m7.5 10.5v-8c0-1.1045695-.8954305-2-2-2h-3c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h10c1.1045695 0 2-.8954305 2-2v-10c0-1.1045695-.8954305-2-2-2h-3"/><path d="m4.5 7.5 3 3 3-3"/>
+            </g>
+    </svg>
+
+    
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__iner" id="">
+                <div class="header__logo">
+                    <img src="img/logo-1.svg" alt="">
+                    <p>Amaretto.Cake48</p>   
+                </div>
+                <div class="header__nav">
+                    <a class="nav__link" href="#">Главная</a>
+                    <a class="nav__link" href="#">Работы</a>
+                    <a class="nav__link" href="#">Начинки</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </div>    
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__main">
+                    <h1 class="intro__title">У каждого вкуса есть своя история</h1>
+                    <h3 class="intro__subtitle">Закажи свой уникальный торт</h3>
+                    <a id="btnModal" class="btn btn--hover" href="#">Отправить заявку</a>
+                </div>
+                <div class="intro__image"><img src="" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- The Modal -->
+    <div id="formModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/action_page.php" method="post" enctype="multipart/form-data">
+
+                <div class="title__modal">
+                    <p class="title__text">Оставить заявку</p>
+                </div>                        
+
+                <label for="name"></label>
+                <input class="name" type="text" id="name" name="name" required placeholder="Имя">
+                
+
+                
+                <label for="phone"></label>
+                <input class="phone" type="tel" id="phone" name="phone" required placeholder="Телефон">
+                
+                
+                <div>
+                <label for="email"></label>
+                <input class="email" type="email" id="email" name="email" required placeholder="E-mail">
+                </div>
+                
+                <label for="subject"></label>
+                <textarea class="subject" id="subject"  name="subject" required placeholder="Дата, количество гостей, комментарии"></textarea>
+                <div>
+                <div input__wrapper>
+                    <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                    <label for="input__file" class="input__file-button">
+                    
+                    <span class="input__file-button-text">Выберите файл</span>
+                    </label>
+                </div>  
+                
+                <div>
+                    <input class="btn-modal" type="submit" value="отправить заявку">
+                </div>
+            </div>               
+        </div>
+    </div>
+
+
+    <!-- Story -->
+    <div class="story">
+        <div class="container">
+            <div class="story__text">
+                <p>Каждый праздник – особенный. Торт станет завершающим украшением вашего праздника и надолго запомнится Вам и вашим гостям.</p>
+            </div>
+        </div>
+    </div>
+
+
+   <script src="app.js"></script> 
+  </body>
+</html>
